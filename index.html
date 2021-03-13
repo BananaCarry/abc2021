@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Abecedarul Carierei</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/x-icon" href="logo2.png" id="logo_2"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="script.js" defer></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+        <style>
+            body *{
+                font-family: 'Lora', serif !important; 
+            }
+            body{
+                width:90%;
+                max-width:1300px;
+                margin:0px auto;
+                overflow-x:hidden;
+            }
+
+            #logo{
+                height: 50px;
+                margin-top: 20px;
+            }
+            #ribbon {
+                height: 90px;
+                width: 100vw;
+                background: rgba(43, 106, 179, .8);
+                backdrop-filter: blur(7px);
+                position: fixed;
+                top:0;
+                left: 0;
+                text-align: left;
+                display: block;
+                z-index: 2;
+               }
+            img.persoana-echipa{
+                width: 100%;
+                border-radius: 100%;
+            }
+            .nume-pers{
+                text-align: center;
+                margin-top: 5px;
+                text-transform: uppercase;
+                font-size: 20px;
+            }
+
+            
+            #data{
+                font-size: 60px;
+                font-weight: bold;
+                text-align: center;
+                color: white;
+                margin-top:32vh;
+            }
+
+            #data-inscrieri{
+                background: url("background2.jpg");
+                width: 100vw;
+                height: 100vh;
+                background-size: cover;
+                position:absolute;
+                left:0;
+                top:0;
+            }
+
+            #wrapper{
+                font-family: 'Times New Roman', Times, serif;
+                /* background: linear-gradient(175deg, rgba(22,147,189,1) 0%, rgba(255,255,255,1) 94%); */
+                margin-top:100vh;
+            }
+            p{
+                font-size: 17px;
+            }
+            h3, h2{
+                text-align: center;
+                font-weight: bold;
+            }
+            h4{
+                text-align: center;
+                font-weight: bold;
+                color:rgb(43, 106, 179);
+                font-size: 20px;
+            }
+            #proiectul{
+                margin-bottom: 50px;
+                margin-top:50px;
+            }
+            #proiectul p{
+                font-size: 20px;
+            }
+            #proiectul h2{
+                padding-top: 50px;
+            }
+            #management-proiect{
+                text-align: center;
+                margin-bottom:50px;
+                padding-top:140px;
+            }
+            .sectiuni{
+                text-align:center;
+                padding: 20px;
+                margin-top: 40px;
+            }
+            .sectiuni p{
+                min-height:100px;
+            }
+            .texte{
+                background:#fff;
+                color:#222;
+                padding:20px;
+                display:none;
+                margin:20px 0px;
+            }
+            #meniu-principal{
+                text-align:right;
+                background:transparent;
+                margin-top:15px;
+                line-height:55px;
+            }
+            #meniu-principal a{
+                color:#eee;
+                font-size:1.2rem;
+                margin:0px 8px;
+            }
+            ::selection{
+                background:rgba(73,122,127,.6);
+                color:white;
+            }
+            .om{
+                font-size: 18px;
+                padding:30px;
+                color:rgba(0, 0, 0, .8);
+            }
+            .om img{
+                margin-bottom: 25px;
+            }
+            .om h4{
+                color:rgb(43, 106, 179);
+            }
+            .sectiune-selectata{
+                background:#c00;
+            }.sectiune-selectata:hover{
+                background:#cc0;
+            }
+           #sectiuni-text{
+               text-align: center;
+            }
+           #premii{
+                font-size: 18px;
+                color:rgb(0, 0, 0);
+            }
+            #sectiuni-tot{
+                margin-bottom:50px;
+                padding-top:140px;
+            }
+        </style>
+        <meta charset="utf-8"/>
+    </head>
+<body>
+    <nav id="ribbon">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 col-sm-12">
+            <img src="logo_alb2.png" id="logo" />
+            </div>
+            <div class="col-md-9" id="meniu-principal">
+                <a href="#sectiuni-tot">Secțiuni</a>
+                <a href="#management-proiect">Echipa de managemenet</a>
+                <a href="Mapă-de-prezentare-Abecedarul-Carierei.pdf" role="button" target="_blank">Mapa de prezentare</a>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <div id="data-inscrieri">
+        <div id="data">12.04.2021 - 25.04.2021<br />
+            <a class="btn btn-primary" href="https://youtu.be/wKRL7vkWMoc" role="button" target="_blank">Înscrie-te!</a>
+        </div>
+    </div>
+
+    <div id="wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="proiectul" data-aos="flip-up">
+                        <h2>Ce este Abecedarul Carierei?</h2>
+                        
+                        <p>&ensp&emsp 
+                        Abecedarul Carierei este un proiect realizat de Organizația Studenților din Universitatea de Vest din Timișoara (OSUT), cu scopul de a ghida tinerii aflați la început de drum spre o carieră de succes.
+                        <br>
+                        &ensp&emsp
+                        Inițiativa care a luat naștere în 2014, ajunge anul acesta la cea de a VIII-a ediție și aduce cu ea din ce în ce mai multe oportunități de dezvoltare pentru curioși.
+                        </p>
+                        <h2><img src="https://img.icons8.com/material-rounded/48/000000/prize.png"/>Premii câștigate de Abecedarul Carierei<img src="https://img.icons8.com/material-rounded/48/000000/prize.png"/></h2> (TODO: De facut iconite precum astea pentru a evita copyright-ul) 
+                    </div>
+                </div>
+                    <div class="col-md-4" id="premii">
+                        Cel mai bun proiect de și
+                        pentru tineret din județul
+                        Timiș la categoria Ocupare și
+                        antreprenoriat (2017)
+                        Acordat de Fundația Județeană
+                        pentru Tineret Timiș
+                    </div>
+                    <div class="col-md-4" id="premii">
+                        Cel mai bun proiect în
+                        domeniul muncă și
+                        angajabilitate (2016)
+                        Acordat de Fundația Județeană
+                        pentru Tineret Timiș
+                    </div>
+                    <div class="col-md-4" id="premii">
+                        Cel mai bun proiect în
+                        domeniul dezvoltare
+                        economică și socială (2015)
+                        Acordat de Fundația Județeană
+                        pentru Tineret Timiș
+                    </div>
+                
+            </div>
+        </div>
+        <div id="sectiuni-tot">
+            <h2 id="sectiuni-text">Secțiunile Abecedarului Carierei</h2>
+            <div class="container-fluid" id="sectiuni" data-aos="flip-up">
+                <div class="row">
+                    <div class="col-md-4  sectiuni">
+                        <h4 style="color: #0181b4">Economia de la A la Noi</h4>
+                        <p> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            Economia de la A la Noi vizează participanții care
+                            au un interes comun, și anume, economia.
+                            Temele actuale din sfera economică sunt
+                            abordate în cadrul unor ateliere susținute de
+                            profesioniști în domeniu.
+                            </p>
+                        <button type="button" class="btn btn-secondary buton-text" id="economia">Mai multe despre evenimente</button>
+                    </div>
+                    <div class="col-md-4 sectiuni" >
+                        <h4 style="color: #65afd1">ABC-ul angajării</h4>
+                        <p> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            ABC-ul Angajării are un caracter general
+                            deoarece vizează orice tânăr interesat de integrarea
+                            pe piața muncii, indiferent de domeniul de studiu.
+                        </p>
+                        <button type="button" class="btn btn-secondary buton-text" id="angajare">Mai multe despre evenimente</button>
+                    </div>
+                    <div class="col-md-4 sectiuni">
+                        <h4 style="color: #94cedf;">Antreprenoriatul de la A la Tine</h4>
+                        <p> Dedicată dezvoltării spiritului antreprenorial
+                            în rândul tinerilor, aceasta constituie „puntea” dintre
+                            mediul universitar și cel socio-economic.
+                        </p>
+                        <button type="button" id="antre" class="btn btn-secondary buton-text">Mai multe despre evenimente</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+            <div class="col-md-12 texte" id="text-economia">
+                <h1>Economia de la A la Noi</h1>
+                <b>Bazele unui influencer în online -></b>
+                 training despre motivație, putere de lucru și informații necesare pentru a crea o comunitate în online și a pune bazele unei cariere în social media
+                <br><br>
+
+                <b>Artele spectacolului -></b> 
+                 training despre începutul vieții de actor din perspectiva unui student la UNATC I.L. Caragiale și informații descoperite după activarea în domeniu din perspectiva unui actor
+                <br><br>
+
+                <b>Fashion Career and lessons -></b>
+                 training despre cum să creezi o carieră de succes în lumea fashionului privită din 2 perspective: <br>
+                  => a unui creator de modă <br>
+                  => a unei tinere colaboratoare cu un creator de modă
+                <br><br>
+
+                <b>Cum să ajungi la o carieră de succes din fotografie-> </b>
+                 training cu 2 fotografi soț-soție care au ajuns să se cunoască prin această pasiune comună și de la simple ședințe decente au ajuns cei mai îndrăgiți și căutați oameni pentru evenimente atât în țară cât și afară
+                <br><br>
+
+                <b>Cum să ai o carieră de succes pe ritmul muzicii -></b>
+                 training despre munca și implicarea de care este nevoie pentru a ajunge să dansezi pe cele mai mari scene ale lumii
+            
+            </div>
+            <div class="col-md-12 texte" id="text-angajare">
+                <h1>ABC-ul angajării</h1>
+                <b>Antreprenoriatul de succes- de la dorință la realitate -> </b>
+                 facilitatorul va prezenta cum a început totul, „cheia succesului”, sfaturi pentru cei ce și-ar dori să înceapă o afacere dar nu au curaj, apoi în mare parte întrebări și discuții libere cu participanții 
+                <br><br>
+
+                <b>Tips and tricks în afaceri-Eșecul în antreprenoriat și cum o luăm de la capăt  -> </b>
+                 bazele antreprenoriatului, ce e bine și ce nu, sfaturi, întrebări, motivarea participanților să-și urmeze visul și evident, ce facem în cazul în care o afacere eșuează, cum ne pliem pe situație, schimbarea domeniului de activitate
+                <br><br>
+                
+                <b>Viața de antreprenor îmbinată cu mediul online -> </b>
+                 despre cariera online, dar și cea de antreprenor, bazele acestora, cum îmbini viața socială cu cea profesională 
+                <br><br>
+                
+                <b>Fondurile Europene. Cum le manageriem?  -> </b>
+                 despre fondurile europene. Cum se obțin, ce facem cu ele? 
+                <br><br>
+                
+                <b>Public Speaking în afaceri -> </b>
+                 cum comunicăm cu angajatorul, angajații, furnizori, parteneri, etc. 
+                <br><br>
+                
+                <b>Cum să crești pe Instagram rapid și sigur  -> </b>
+                 "teoria" din spate și sfaturi de cum să creștem pe social-media.
+                <br><br>
+                
+                <b>Social Media pentru afacerea sau ONG-ul tău -> </b>
+                Te-ai întrebat vreodată de ce Social Media pare așa de ușor pentru unele branduri, sau cum de acestea reușesc să strângă un număr impresionant de interacțiuni?<br>
+                În acest curs vom prezenta cele mai importante rețele de socializare (Facebook, Instagram, Youtube, Linkedin, Twitter, Google+,, Pinterest) si motede prin care acestea pot fi cucerite.
+                
+                
+            </div>
+            <div class="col-md-12 texte" id="text-antre">
+                <h1>Antreprenoriatul de la A la Tine</h1>
+                <b>Cum să econimisești banii într-un mod cât mai corect -> </b>
+                 un workshop în care ni se prezintă metode cu ajutorul cărora putem să facem economii făra a intra în datorii sau a ne face viața mai grea.
+                <br><br>
+                <b>Totul despre bănci -> </b>
+                 un workshop din care învățăm cum funcționează băncile din România și ce beneficii avem prin utilizarea unor conturi bancare și a serviciilor băncilor.
+                <br><br>
+                <b>Blockchain pe înțelesul tuturor -> </b>
+                 un workshop despre tehnologia blockchain, criptomonede și cum acestea se dezvoltă tot mai mult în perioada actuală.
+                <br><br>
+                <b>Cum să investești la bursă -> </b>
+                 un workshop în care este prezentată bursa și cum putem investi prin intermediul acesteia pentru a obține profit.
+                <br><br>
+                <b>Economia mondială în perioada pandemică -> </b>
+                 un workshop în care ni se prezintă cum evoluează economia la nivel mondial în perioada de pandemie.
+                
+            </div>
+            </div>
+        </div>
+        <div id="management-proiect"  data-aos="fade-up">
+            <p style="text-align: center; font-weight: bold; font-size: 40px;">
+                Echipa de management a proiectului:
+            </p>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="om">
+                        <img src='echipa/Adela.png' class="persoana-echipa p2">
+                        <h4>Adela-Diana Dînșorean</h4> Coordonator general
+                    </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="om">
+                        <img src='https://osut.ro/echipa/Emilian2.jpg' class="persoana-echipa p2">
+                        <h4>Văleanu Patricia</h4> Vicepreședinte organizare internă și cu proiectele OSUT
+                    </div>
+                    </div><div class="col-md-3">
+                        <div class="om">
+                        <img src='echipa/Ema.png' class="persoana-echipa p2">
+                        <h4>Alexandra-Emanuela Cârcu</h4> Responsabil PR
+                    </div>
+                    </div><div class="col-md-3">
+                        <div class="om">
+                        <img src='echipa/Laura.png' class="persoana-echipa p2">
+                        <h4>Laura Chiriță</h4> Responsabil imagine
+                    </div>
+                    </div><div class="col-md-3">
+                        <div class="om">
+                        <img src='echipa/Tirizica.png' class="persoana-echipa p2">
+                        <h4>Ionuț Tirizică</h4> Responsabil FR
+                    </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="om">
+                        <img src='https://osut.ro/echipa/Emilian2.jpg' class="persoana-echipa p2">
+                        <h4>Guță George</h4> Task Manager
+                    </div>
+                    </div><div class="col-md-3">
+                        <div class="om">
+                        <img src='echipa/Bianca.png' class="persoana-echipa p2">
+                        <h4>Bianca-Iulia Brojbă</h4> Responsabil de secțiune - ABC-ul angajării
+                    </div>
+                    </div><div class="col-md-3">
+                        <div class="om">
+                        <img src='echipa/Daria.png' class="persoana-echipa p2">
+                        <h4>Daria Negrea</h4> Responsabil de secțiune - Antreprenoriatul de la A la Tine
+                    </div>
+                    </div><div class="col-md-3">
+                        <div class="om">
+                        <img src='https://osut.ro/echipa/Emilian2.jpg' class="persoana-echipa p2">
+                        <h4>Sergiu Răchițeanu</h4> Responsabil de secțiune - Economia de la A la Noi
+                    </div>
+                    </div><div class="col-md-3">
+                        <div class="om">
+                        <img src='echipa/Emi.png' class="persoana-echipa p2">
+                        <h4>Emilian-Andrei Bogdan</h4> Responsabil IT (Îi plac pisicile)
+                    </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
