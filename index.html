@@ -17,12 +17,10 @@
                 font-family: 'Lora', serif !important; 
             }
             body{
-                width:90%;
-                max-width:1300px;
+                width:auto;
                 margin:0px auto;
                 overflow-x:hidden;
             }
-
             #logo{
                 height: 50px;
                 margin-top: 20px;
@@ -73,6 +71,10 @@
                 font-family: 'Times New Roman', Times, serif;
                 /* background: linear-gradient(175deg, rgba(22,147,189,1) 0%, rgba(255,255,255,1) 94%); */
                 margin-top:100vh;
+                min-height: 100%;
+                min-width: 1300px;
+                margin-left: 5%;
+                margin-right: 5%;
             }
             p{
                 font-size: 17px;
@@ -101,6 +103,8 @@
                 text-align: center;
                 margin-bottom:50px;
                 padding-top:140px;
+                margin-left: 15%;
+                margin-right: 15%;
             }
             .sectiuni{
                 text-align:center;
@@ -116,6 +120,7 @@
                 padding:20px;
                 display:none;
                 margin:20px 0px;
+                margin-left: 20%;
             }
             #meniu-principal{
                 text-align:right;
@@ -134,7 +139,7 @@
             }
             .om{
                 font-size: 18px;
-                padding:30px;
+                padding:20px;
                 color:rgba(0, 0, 0, .8);
             }
             .om img{
@@ -158,6 +163,28 @@
             #sectiuni-tot{
                 margin-bottom:50px;
                 padding-top:140px;
+                min-width: 1300px;
+                max-width: 1300px;
+                margin-left: 20%;
+            }
+            footer .container .row .col-md-6{
+                background-color:#303030;
+            }
+            footer .container{
+                margin: auto;
+                width: auto;
+                padding: 0px;
+            }
+            footer{
+                background-color: #303030;
+                color: white;
+                text-align: center;
+                padding:3px;
+                width: auto;
+            }
+            footer p{
+                color: #fff;
+                
             }
         </style>
         <meta charset="utf-8"/>
@@ -184,19 +211,19 @@
     </div>
 
     <div id="wrapper">
-        <div class="container-fluid">
+        <div class="container-fluid" style="width: 1300px;">
             <div class="row">
                 <div class="col-md-12">
                     <div id="proiectul" data-aos="flip-up">
                         <h2>Ce este Abecedarul Carierei?</h2>
                         
-                        <p>&ensp&emsp 
+                        <p>&ensp;&emsp; 
                         Abecedarul Carierei este un proiect realizat de Organizația Studenților din Universitatea de Vest din Timișoara (OSUT), cu scopul de a ghida tinerii aflați la început de drum spre o carieră de succes.
                         <br>
-                        &ensp&emsp
+                        &ensp;&emsp;
                         Inițiativa care a luat naștere în 2014, ajunge anul acesta la cea de a VIII-a ediție și aduce cu ea din ce în ce mai multe oportunități de dezvoltare pentru curioși.
                         </p>
-                        <h2><img src="https://img.icons8.com/material-rounded/48/000000/prize.png"/>Premii câștigate de Abecedarul Carierei<img src="https://img.icons8.com/material-rounded/48/000000/prize.png"/></h2> (TODO: De facut iconite precum astea pentru a evita copyright-ul) 
+                        <h2><img src="https://img.icons8.com/material-rounded/48/000000/prize.png"/>Premii câștigate de Abecedarul Carierei<img src="https://img.icons8.com/material-rounded/48/000000/prize.png"/></h2>
                     </div>
                 </div>
                     <div class="col-md-4" id="premii">
@@ -338,67 +365,87 @@
             </div>
         </div>
         <div id="management-proiect"  data-aos="fade-up">
-            <p style="text-align: center; font-weight: bold; font-size: 40px;">
-                Echipa de management a proiectului:
-            </p>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="om">
-                        <img src='echipa/Adela.png' class="persoana-echipa p2">
-                        <h4>Adela-Diana Dînșorean</h4> Coordonator general
-                    </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="om">
-                        <img src='https://osut.ro/echipa/Emilian2.jpg' class="persoana-echipa p2">
-                        <h4>Văleanu Patricia</h4> Vicepreședinte organizare internă și cu proiectele OSUT
-                    </div>
-                    </div><div class="col-md-3">
-                        <div class="om">
-                        <img src='echipa/Ema.png' class="persoana-echipa p2">
-                        <h4>Alexandra-Emanuela Cârcu</h4> Responsabil PR
-                    </div>
-                    </div><div class="col-md-3">
-                        <div class="om">
-                        <img src='echipa/Laura.png' class="persoana-echipa p2">
-                        <h4>Laura Chiriță</h4> Responsabil imagine
-                    </div>
-                    </div><div class="col-md-3">
-                        <div class="om">
-                        <img src='echipa/Tirizica.png' class="persoana-echipa p2">
-                        <h4>Ionuț Tirizică</h4> Responsabil FR
-                    </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="om">
-                        <img src='https://osut.ro/echipa/Emilian2.jpg' class="persoana-echipa p2">
-                        <h4>Guță George</h4> Task Manager
-                    </div>
-                    </div><div class="col-md-3">
-                        <div class="om">
-                        <img src='echipa/Bianca.png' class="persoana-echipa p2">
-                        <h4>Bianca-Iulia Brojbă</h4> Responsabil de secțiune - ABC-ul angajării
-                    </div>
-                    </div><div class="col-md-3">
-                        <div class="om">
-                        <img src='echipa/Daria.png' class="persoana-echipa p2">
-                        <h4>Daria Negrea</h4> Responsabil de secțiune - Antreprenoriatul de la A la Tine
-                    </div>
-                    </div><div class="col-md-3">
-                        <div class="om">
-                        <img src='https://osut.ro/echipa/Emilian2.jpg' class="persoana-echipa p2">
-                        <h4>Sergiu Răchițeanu</h4> Responsabil de secțiune - Economia de la A la Noi
-                    </div>
-                    </div><div class="col-md-3">
-                        <div class="om">
-                        <img src='echipa/Emi.png' class="persoana-echipa p2">
-                        <h4>Emilian-Andrei Bogdan</h4> Responsabil IT (Îi plac pisicile)
-                    </div>
-                    </div>
+                <p style="text-align: center; font-weight: bold; font-size: 40px;">
+                    Echipa de management a proiectului:
+                </p>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="om">
+                            <img src='echipa/Adela.png' class="persoana-echipa p2">
+                            <h4>Adela-Diana Dînșorean</h4> Coordonator general
+                        </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="om">
+                            <img src='https://osut.ro/echipa/Emilian2.jpg' class="persoana-echipa p2">
+                            <h4>Văleanu Patricia</h4> Vicepreședinte organizare internă și cu proiectele OSUT
+                        </div>
+                        </div><div class="col-md-3">
+                            <div class="om">
+                            <img src='echipa/Ema.png' class="persoana-echipa p2">
+                            <h4>Alexandra-Emanuela Cârcu</h4> Responsabil PR
+                        </div>
+                        </div><div class="col-md-3">
+                            <div class="om">
+                            <img src='echipa/Laura.png' class="persoana-echipa p2">
+                            <h4>Laura Chiriță</h4> Responsabil imagine
+                        </div>
+                        </div><div class="col-md-3">
+                            <div class="om">
+                            <img src='echipa/Tirizica.png' class="persoana-echipa p2">
+                            <h4>Ionuț Tirizică</h4> Responsabil FR
+                        </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="om">
+                            <img src='https://osut.ro/echipa/Emilian2.jpg' class="persoana-echipa p2">
+                            <h4>Guță George</h4> Task Manager
+                        </div>
+                        </div><div class="col-md-3">
+                            <div class="om">
+                            <img src='echipa/Bianca.png' class="persoana-echipa p2">
+                            <h4>Bianca-Iulia Brojbă</h4> Responsabil de secțiune - ABC-ul angajării
+                        </div>
+                        </div><div class="col-md-3">
+                            <div class="om">
+                            <img src='echipa/Daria.png' class="persoana-echipa p2">
+                            <h4>Daria Negrea</h4> Responsabil de secțiune - Antreprenoriatul de la A la Tine
+                        </div>
+                        </div><div class="col-md-3">
+                            <div class="om">
+                            <img src='https://osut.ro/echipa/Emilian2.jpg' class="persoana-echipa p2">
+                            <h4>Sergiu Răchițeanu</h4> Responsabil de secțiune - Economia de la A la Noi
+                        </div>
+                        </div><div class="col-md-3">
+                            <div class="om">
+                            <img src='echipa/Emi.png' class="persoana-echipa p2">
+                            <h4>Emilian-Andrei Bogdan</h4> Responsabil IT (Îi plac pisicile)
+                        </div>
+                        </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </div> 
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>
+                                Organizația Studenților din Universitatea de Vest din Timișoara (OSUT)<br>
+                                Bd. Vasile Pârvan nr. 4, camera 247,<br>
+                                Timișoara, județul Timiș<br>
+                                +40.256.592.181
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>
+                                Pisici_#2
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
     </div>
 </body>
