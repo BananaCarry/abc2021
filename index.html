@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -107,7 +108,7 @@
                 margin-right: 15%;
             }
             .sectiuni{
-                text-align:center;
+                text-align:justify;
                 padding: 20px;
                 margin-top: 40px;
             }
@@ -119,8 +120,8 @@
                 color:#222;
                 padding:20px;
                 display:none;
-                margin:20px 0px;
-                margin-left: 20%;
+                margin-left: auto;
+                margin-right: auto;
             }
             #meniu-principal{
                 text-align:right;
@@ -165,7 +166,8 @@
                 padding-top:140px;
                 min-width: 1300px;
                 max-width: 1300px;
-                margin-left: 20%;
+                margin-left: auto;
+                margin-right: auto;
             }
             footer .container .row .col-md-6{
                 background-color:#303030;
@@ -180,11 +182,11 @@
                 color: white;
                 text-align: center;
                 padding:3px;
+                padding-top: 20px;
                 width: auto;
             }
             footer p{
                 color: #fff;
-                
             }
         </style>
         <meta charset="utf-8"/>
@@ -197,9 +199,9 @@
             <img src="logo_alb2.png" id="logo" />
             </div>
             <div class="col-md-9" id="meniu-principal">
-                <a href="#sectiuni-tot">Secțiuni</a>
-                <a href="#management-proiect">Echipa de managemenet</a>
-                <a href="Mapă-de-prezentare-Abecedarul-Carierei.pdf" role="button" target="_blank">Mapa de prezentare</a>
+                <a href="#sectiuni-tot"><button type="button" class="btn btn-light">Secțiuni</button></a>
+                <a href="#management-proiect"><button type="button" class="btn btn-light">Echipa de managemenet</button></a>
+                <a href="Mapă-de-prezentare-Abecedarul-Carierei.pdf" role="button" target="_blank"><button type="button" class="btn btn-light">Mapa de prezentare</button></a>
             </div>
         </div>
         </div>
@@ -212,7 +214,7 @@
 
     <div id="wrapper">
         <div class="container-fluid" style="width: 1300px;">
-            <div class="row">
+            <div class="row" data-aos="flip-up">
                 <div class="col-md-12">
                     <div id="proiectul" data-aos="flip-up">
                         <h2>Ce este Abecedarul Carierei?</h2>
@@ -252,12 +254,12 @@
             </div>
         </div>
         <div id="sectiuni-tot">
-            <h2 id="sectiuni-text">Secțiunile Abecedarului Carierei</h2>
+            <h2 id="sectiuni-text" data-aos="flip-up">Secțiunile Abecedarului Carierei</h2>
             <div class="container-fluid" id="sectiuni" data-aos="flip-up">
                 <div class="row">
                     <div class="col-md-4  sectiuni">
                         <h4 style="color: #0181b4">Economia de la A la Noi</h4>
-                        <p> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        <p> 
                             Economia de la A la Noi vizează participanții care
                             au un interes comun, și anume, economia.
                             Temele actuale din sfera economică sunt
@@ -268,10 +270,8 @@
                     </div>
                     <div class="col-md-4 sectiuni" >
                         <h4 style="color: #65afd1">ABC-ul angajării</h4>
-                        <p> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                            ABC-ul Angajării are un caracter general
-                            deoarece vizează orice tânăr interesat de integrarea
-                            pe piața muncii, indiferent de domeniul de studiu.
+                        <p> 
+                            ABC-un angajării este secțiunea care anul acesta are la bază diversitatea și pasiunea. Astfel, in aceasta editie a Abecedarului, ni se alătură oameni de succes care ne vor demonstra ca din pasiune se poate creea o cariera incredibila.
                         </p>
                         <button type="button" class="btn btn-secondary buton-text" id="angajare">Mai multe despre evenimente</button>
                     </div>
@@ -420,7 +420,7 @@
                         </div><div class="col-md-3">
                             <div class="om">
                             <img src='echipa/Emi.png' class="persoana-echipa p2">
-                            <h4>Emilian-Andrei Bogdan</h4> Responsabil IT (Îi plac pisicile)
+                            <h4>Emilian-Andrei Bogdan</h4> Responsabil IT
                         </div>
                         </div>
                         </div>
@@ -440,7 +440,8 @@
                         </div>
                         <div class="col-md-6">
                             <p>
-                                Pisici_#2
+                                Some useful text (Nu mai am idei).<br>
+                                <img src="Logo OSUT alb.png" style="height: 100px;">
                             </p>
                         </div>
                     </div>
