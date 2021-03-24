@@ -13,182 +13,7 @@
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
-        <style>
-            body *{
-                font-family: 'Lora', serif !important; 
-            }
-            body{
-                width:auto;
-                margin:0px auto;
-                overflow-x:hidden;
-            }
-            #logo{
-                height: 50px;
-                margin-top: 20px;
-            }
-            #ribbon {
-                height: 90px;
-                width: 100vw;
-                background: rgba(43, 106, 179, .8);
-                backdrop-filter: blur(7px);
-                position: fixed;
-                top:0;
-                left: 0;
-                text-align: left;
-                display: block;
-                z-index: 2;
-               }
-            img.persoana-echipa{
-                width: 100%;
-                border-radius: 100%;
-            }
-            .nume-pers{
-                text-align: center;
-                margin-top: 5px;
-                text-transform: uppercase;
-                font-size: 20px;
-            }
-
-            
-            #data{
-                font-size: 60px;
-                font-weight: bold;
-                text-align: center;
-                color: white;
-                margin-top:32vh;
-            }
-
-            #data-inscrieri{
-                background: url("background2.jpg");
-                width: 100vw;
-                height: 100vh;
-                background-size: cover;
-                position:absolute;
-                left:0;
-                top:0;
-            }
-
-            #wrapper{
-                font-family: 'Times New Roman', Times, serif;
-                /* background: linear-gradient(175deg, rgba(22,147,189,1) 0%, rgba(255,255,255,1) 94%); */
-                margin-top:100vh;
-                min-height: 100%;
-                min-width: 1300px;
-                margin-left: 5%;
-                margin-right: 5%;
-            }
-            p{
-                font-size: 17px;
-            }
-            h3, h2{
-                text-align: center;
-                font-weight: bold;
-            }
-            h4{
-                text-align: center;
-                font-weight: bold;
-                color:rgb(43, 106, 179);
-                font-size: 20px;
-            }
-            #proiectul{
-                margin-bottom: 50px;
-                margin-top:50px;
-            }
-            #proiectul p{
-                font-size: 20px;
-            }
-            #proiectul h2{
-                padding-top: 50px;
-            }
-            #management-proiect{
-                text-align: center;
-                margin-bottom:50px;
-                padding-top:140px;
-                margin-left: 15%;
-                margin-right: 15%;
-            }
-            .sectiuni{
-                text-align:justify;
-                padding: 20px;
-                margin-top: 40px;
-            }
-            .sectiuni p{
-                min-height:100px;
-            }
-            .texte{
-                background:#fff;
-                color:#222;
-                padding:20px;
-                display:none;
-                margin-left: auto;
-                margin-right: auto;
-            }
-            #meniu-principal{
-                text-align:right;
-                background:transparent;
-                margin-top:15px;
-                line-height:55px;
-            }
-            #meniu-principal a{
-                color:#eee;
-                font-size:1.2rem;
-                margin:0px 8px;
-            }
-            ::selection{
-                background:rgba(73,122,127,.6);
-                color:white;
-            }
-            .om{
-                font-size: 18px;
-                padding:20px;
-                color:rgba(0, 0, 0, .8);
-            }
-            .om img{
-                margin-bottom: 25px;
-            }
-            .om h4{
-                color:rgb(43, 106, 179);
-            }
-            .sectiune-selectata{
-                background:#c00;
-            }.sectiune-selectata:hover{
-                background:#cc0;
-            }
-           #sectiuni-text{
-               text-align: center;
-            }
-           #premii{
-                font-size: 18px;
-                color:rgb(0, 0, 0);
-            }
-            #sectiuni-tot{
-                margin-bottom:50px;
-                padding-top:140px;
-                min-width: 1300px;
-                max-width: 1300px;
-                margin-left: auto;
-                margin-right: auto;
-            }
-            footer .container .row .col-md-6{
-                background-color:#303030;
-            }
-            footer .container{
-                margin: auto;
-                width: auto;
-                padding: 0px;
-            }
-            footer{
-                background-color: #303030;
-                color: white;
-                text-align: center;
-                padding:3px;
-                padding-top: 20px;
-                width: auto;
-            }
-            footer p{
-                color: #fff;
-            }
-        </style>
+        <link href="style.css" rel="stylesheet">
         <meta charset="utf-8"/>
     </head>
 <body>
@@ -213,12 +38,11 @@
     </div>
 
     <div id="wrapper">
-        <div class="container-fluid" style="width: 1300px;">
+        <div class="container-fluid">
             <div class="row" data-aos="flip-up">
                 <div class="col-md-12">
                     <div id="proiectul" data-aos="flip-up">
                         <h2>Ce este Abecedarul Carierei?</h2>
-                        
                         <p>&ensp;&emsp; 
                         Abecedarul Carierei este un proiect realizat de Organizația Studenților din Universitatea de Vest din Timișoara (OSUT), cu scopul de a ghida tinerii aflați la început de drum spre o carieră de succes.
                         <br>
