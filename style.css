@@ -1,170 +1,180 @@
-body *{
-  font-family: 'Lora', serif !important; 
+body * {
+  font-family: 'Lora', serif !important;
 }
-body{
-  width:auto;
-  margin:0px auto;
-  overflow-x:hidden;
+body {
+  width: auto;
+  margin: 0px auto;
+  overflow-x: hidden;
 }
-#logo{
+/* utility */
+.center {
+  text-align: center;
+}
+.gutter-bottom {
+  margin-bottom: 30px;
+}
+.sub-title {
+  color: #0a426a;
+}
+.prize {
+  width: 100px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+/* restu ?????????? */
+#logo {
   height: 50px;
   margin-top: 20px;
 }
 #ribbon {
   height: 90px;
   width: 100vw;
-  background: rgba(43, 106, 179, .8);
+  background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(7px);
   position: fixed;
-  top:0;
+  top: 0;
   left: 0;
   text-align: left;
   display: block;
   z-index: 2;
- }
-img.persoana-echipa{
+}
+img.persoana-echipa {
   width: 100%;
   border-radius: 100%;
 }
-.nume-pers{
-  text-align: center;
+.nume-pers {
   margin-top: 5px;
   text-transform: uppercase;
   font-size: 20px;
 }
 
-
-#data{
+#data {
   font-size: 60px;
   font-weight: bold;
-  text-align: center;
+
   color: white;
-  margin-top:32vh;
+  margin-top: 32vh;
 }
 
-#data-inscrieri{
-  background: url("background2.jpg");
+#data-inscrieri {
+  background: url('background2.jpg');
   width: 100vw;
   height: 100vh;
   background-size: cover;
-  position:absolute;
-  left:0;
-  top:0;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.star {
+  font-size: 100px;
+  margin: 0px;
+  line-height: 60px;
+  margin-left: -10px; /* aia e */
 }
 
-#wrapper{
+.wrapper {
   font-family: 'Times New Roman', Times, serif;
-  margin-top:100vh;
-  min-height: 100%;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-top: 100vh;
+  width: 90%;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
 }
-p{
+p {
   font-size: 17px;
 }
-h3, h2{
-  text-align: center;
+h3,
+h2 {
   font-weight: bold;
 }
-h4{
-  text-align: center;
+h4 {
   font-weight: bold;
-  color:rgb(43, 106, 179);
+  color: rgb(43, 106, 179);
   font-size: 20px;
 }
-#proiectul{
-  margin-bottom: 50px;
-  margin-top:50px;
+#proiectul {
+  margin-bottom: 150px;
+  margin-top: 50px;
 }
-#proiectul p{
+#proiectul p {
   font-size: 20px;
 }
-#proiectul h2{
+#proiectul h2 {
   padding-top: 50px;
 }
-#management-proiect{
-  text-align: center;
-  margin-bottom:50px;
-  padding-top:140px;
-  margin-left: 15%;
-  margin-right: 15%;
+#management-proiect {
+  margin-bottom: 50px;
+  padding-top: 140px;
 }
-.sectiuni{
-  text-align:justify;
+
+.sectiuni p {
+  min-height: 130px;
+}
+.texte {
+  background: #fff;
+  color: #222;
   padding: 20px;
-  margin-top: 40px;
-}
-.sectiuni p{
-  min-height:100px;
-}
-.texte{
-  background:#fff;
-  color:#222;
-  padding:20px;
-  display:none;
+  display: none;
   margin-left: auto;
   margin-right: auto;
 }
-#meniu-principal{
-  text-align:right;
-  background:transparent;
-  margin-top:15px;
-  line-height:55px;
+#meniu-principal {
+  text-align: right;
+  background: transparent;
+  margin-top: 15px;
+  line-height: 55px;
 }
-#meniu-principal a{
-  color:#eee;
-  font-size:1.2rem;
-  margin:0px 8px;
+#meniu-principal a {
+  color: #eee;
+  font-size: 1.2rem;
+  margin: 0px 8px;
 }
-::selection{
-  background:rgba(73,122,127,.6);
-  color:white;
+::selection {
+  background: rgba(73, 122, 127, 0.6);
+  color: white;
 }
-.om{
+.om {
   font-size: 18px;
-  padding:20px;
-  color:rgba(0, 0, 0, .8);
+  padding: 20px;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
 }
-.om img{
+.om img {
   margin-bottom: 25px;
 }
-.om h4{
-  color:rgb(43, 106, 179);
+.om h4 {
+  color: rgb(43, 106, 179);
 }
-.sectiune-selectata{
-  background:#c00;
-}.sectiune-selectata:hover{
-  background:#cc0;
+.sectiune-selectata {
+  background: #c00;
 }
-#sectiuni-text{
- text-align: center;
+.sectiune-selectata:hover {
+  background: #cc0;
 }
-#premii{
-  font-size: 18px;
-  color:rgb(0, 0, 0);
-}
-#sectiuni-tot{
-  margin-bottom:50px;
-  padding-top:140px;
+
+#sectiuni-tot {
+  margin-bottom: 50px;
+  padding-top: 140px;
   margin-left: auto;
   margin-right: auto;
 }
-footer .container .row .col-md-6{
-  background-color:#303030;
+footer .container .row .col-md-6 {
+  background-color: #303030;
 }
-footer .container{
+footer .container {
   margin: auto;
   width: auto;
   padding: 0px;
 }
-footer{
+footer {
   background-color: #303030;
   color: white;
-  text-align: center;
-  padding:3px;
+
+  padding: 3px;
   padding-top: 20px;
   width: auto;
 }
-footer p{
+footer p {
   color: #fff;
 }
