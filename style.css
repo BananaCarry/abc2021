@@ -30,12 +30,12 @@ body {
 #ribbon {
   height: 90px;
   width: 100vw;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(7px);
+  /* background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(7px); */
   position: fixed;
   top: 0;
   left: 0;
-  text-align: left;
+  text-align: left; /*Mult mai ok asa decat centrat*/
   display: block;
   z-index: 2;
 }
@@ -118,6 +118,9 @@ h4 {
   display: none;
   margin-left: auto;
   margin-right: auto;
+}
+.poza-eveniment{
+  width: 100px;
 }
 #meniu-principal {
   text-align: right;
