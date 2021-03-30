@@ -6,9 +6,6 @@ body {
   margin: 0px auto;
   overflow-x: hidden;
 }
-.text-bold{
-  font-weight: 900;
-}
 /* utility */
 .center {
   text-align: center;
@@ -16,7 +13,7 @@ body {
 .gutter-bottom {
   margin-bottom: 30px;
 }
-.subtitle {
+.sub-title {
   color: #0a426a;
 }
 .prize {
@@ -30,8 +27,6 @@ body {
   height: 50px;
   margin-top: 20px;
 }
-
-
 #ribbon {
   height: 90px;
   width: 100vw;
@@ -89,11 +84,14 @@ img.persoana-echipa {
 p {
   font-size: 17px;
 }
-h4,
 h3,
-h2,
-h1 {
-  font-weight: 900;
+h2 {
+  font-weight: bold;
+}
+h4 {
+  font-weight: bold;
+  color: rgb(43, 106, 179);
+  font-size: 20px;
 }
 #proiectul {
   margin-bottom: 150px;
@@ -110,27 +108,30 @@ h1 {
   padding-top: 140px;
 }
 
-.sectiuni{
-  text-align: center;
-  margin-top: 70px;
-  margin-bottom: 40px;
+.sectiuni p {
+  min-height: 130px;
 }
-
 .texte {
   background: #fff;
   color: #222;
   padding: 20px;
+  display: none;
   margin-left: auto;
   margin-right: auto;
 }
 .poza-eveniment{
   width: 100px;
 }
-
-.placeholder-img{
-  width: 100px;
-  height: 100px;
-  background: url(http://goo.gl/vyAs27) no-repeat scroll 0 0;
+#meniu-principal {
+  text-align: right;
+  background: transparent;
+  margin-top: 15px;
+  line-height: 55px;
+}
+#meniu-principal a {
+  color: #eee;
+  font-size: 1.2rem;
+  margin: 0px 8px;
 }
 ::selection {
   background: rgba(73, 122, 127, 0.6);
@@ -139,28 +140,31 @@ h1 {
 .om {
   font-size: 18px;
   padding: 20px;
-  color: rgba(0, 0, 0, 0.65);
-  font-weight: 500;
+  color: rgba(0, 0, 0, 0.8);
   text-align: center;
 }
 .om img {
   margin-bottom: 25px;
 }
-
-.om h4{
-  color: rgba(0, 0, 0, 1);
+.om h4 {
+  color: rgb(43, 106, 179);
 }
-
-.premii{
-  margin-bottom: 35px;
+.sectiune-selectata {
+  background: #c00;
+}
+.sectiune-selectata:hover {
+  background: #cc0;
 }
 
 #sectiuni-tot {
+  margin-bottom: 50px;
   padding-top: 140px;
   margin-left: auto;
   margin-right: auto;
 }
-
+footer .container .row .col-md-6 {
+  background-color: #303030;
+}
 footer .container {
   margin: auto;
   width: auto;
@@ -173,33 +177,7 @@ footer {
   padding: 3px;
   padding-top: 20px;
   width: auto;
-  background: rgba(59, 59, 59, 0.9);
-
 }
 footer p {
   color: #fff;
-}
-
-.logo-social:hover{
-  opacity: 50%;
-}
-.logo-social{
-  width: 50px;
-}
-.icon-detalii{
-  width: 20px;
-}
-li{
-  color:violet;
-  text-decoration: none;
-}
-li::selection{
-  color:white;
-}
-ul{
-  list-style-type: none;
-}
-
-#email-proiect{
-  margin-top: 20px;
 }
