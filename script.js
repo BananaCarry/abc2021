@@ -7,3 +7,7 @@ $(".buton-text").click(function () {
 	$(".texte").slideUp();	
 	$("#text-" + $(this).attr("id")).slideDown();
 });
+
+function hideIcon(self){
+	self.style.backgroundImage = 'none';
+}

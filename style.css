@@ -55,11 +55,23 @@ img.persoana-echipa {
 }
 
 #data {
-  font-size: 60px;
+  font-size: 30px;
   font-weight: bold;
 
   color: white;
+  background: #5f5e5e;
   margin-top: 32vh;
+  margin-left: 5%;
+}
+
+#text-first-page{
+  font-size: 20px;
+  font-weight: 500;
+
+  color: white;
+  background: #302d2d;
+  margin-top: 5px;
+  margin-left: 5%;
 }
 
 #data-inscrieri {
@@ -112,7 +124,7 @@ h1 {
 
 .sectiuni{
   text-align: center;
-  margin-top: 70px;
+  margin-top: 90px;
   margin-bottom: 40px;
 }
 
@@ -122,7 +134,17 @@ h1 {
   padding: 20px;
   margin-left: auto;
   margin-right: auto;
+  transition:0.3s;
+  border-radius: 7%;
+  padding-bottom: 50px;
 }
+.texte:hover{
+  background: rgba(59, 59, 59, 0.15);
+}
+.text-eveniment{
+  margin-top: 50px;
+}
+
 .poza-eveniment{
   width: 100px;
 }
@@ -202,4 +224,9 @@ ul{
 
 #email-proiect{
   margin-top: 20px;
+}
+input#search {
+  background-image: url(bg.jpg);
+  background-repeat: no-repeat;
+  text-indent: 20px;
 }
