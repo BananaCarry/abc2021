@@ -1,5 +1,5 @@
 body * {
-  font-family: "Roboto", serif !important;
+  font-family: 'Roboto', serif !important;
 }
 body {
   width: auto;
@@ -25,6 +25,32 @@ body {
   margin-bottom: 15px;
 }
 
+.desc-om {
+  float: right;
+  width: 74%;
+}
+.poza-om {
+  width: 20%;
+  float: left;
+}
+@media screen and (max-width: 600px) {
+  .desc-om {
+    width: 100%;
+  }
+  .poza-om {
+    display: none;
+  }
+}
+ul,
+li {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100%;
+  margin-bottom: 3px;
+}
+.mb {
+  margin-bottom: 20px;
+}
 /* restu ?????????? */
 #logo {
   height: 50px;
@@ -77,7 +103,7 @@ img.persoana-echipa {
 }
 
 .wrapper {
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Times New Roman', Times, serif;
   width: 90%;
   max-width: 1300px;
   margin-left: auto;
@@ -186,9 +212,14 @@ footer {
   width: 20px;
 }
 li {
-  color: violet;
+  /*color: violet;  WHAT THE ACTUAL FUCK? */
   text-decoration: none;
 }
+
+footer {
+  margin-top: 130px;
+}
+
 li::selection {
   color: white;
 }
@@ -200,6 +231,6 @@ ul {
   margin-top: 20px;
 }
 
-.eveniment{
-  transition: .3s;
+.eveniment {
+  transition: 0.3s;
 }

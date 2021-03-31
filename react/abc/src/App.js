@@ -1,21 +1,21 @@
-import "./App.css";
-import Slider from "./components/Slider";
-import Header from "./components/Header";
-import Wrapper from "./components/Wrapper";
-import Section from "./components/Section";
-import Premii from "./components/Premii";
-import SectiuneAbc from "./components/SectiuneAbc";
-import Eveniment from "./components/Eveniment";
-import Team from "./components/Team";
-import Footer from "./components/Footer";
-import FrontPage from "./components/FrontPage";
+import './App.css';
+import Slider from './components/Slider';
+import Header from './components/Header';
+import Wrapper from './components/Wrapper';
+import Section from './components/Section';
+import Premii from './components/Premii';
+import SectiuneAbc from './components/SectiuneAbc';
+import Eveniment from './components/Eveniment';
+import Team from './components/Team';
+import Footer from './components/Footer';
+import FrontPage from './components/FrontPage';
 
 function App() {
   return (
     <>
       <Header />
       {/* <Slider /> */}
-      {/* <FrontPage /> */}
+      <FrontPage />
       <Wrapper>
         <Section
           title="Ce este Abecedarul Carierei?"
@@ -67,7 +67,6 @@ function App() {
           În acest curs vom prezenta cele mai importante rețele de socializare (Facebook, Instagram, Youtube, Linkedin, Twitter, Google+,, Pinterest) si motede prin care acestea pot fi cucerite."
           link="https://google.com"
         />
-        
 
         {/* ANTREPRENORIATUL DE LA A LA TINE */}
         <SectiuneAbc
@@ -127,7 +126,7 @@ function App() {
         />
         <Team />
       </Wrapper>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

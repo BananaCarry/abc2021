@@ -1,5 +1,5 @@
 body * {
-  font-family: "Roboto", serif !important;
+  font-family: 'Roboto', serif !important;
 }
 
 body {
@@ -29,6 +29,37 @@ body {
   width: 100px;
   display: block;
   margin-bottom: 15px;
+}
+
+.desc-om {
+  float: right;
+  width: 74%;
+}
+
+.poza-om {
+  width: 20%;
+  float: left;
+}
+
+@media screen and (max-width: 600px) {
+  .desc-om {
+    width: 100%;
+  }
+  .poza-om {
+    display: none;
+  }
+}
+
+ul,
+li {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100%;
+  margin-bottom: 3px;
+}
+
+.mb {
+  margin-bottom: 20px;
 }
 
 /* restu ?????????? */
@@ -87,7 +118,7 @@ img.persoana-echipa {
 }
 
 .wrapper {
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Times New Roman', Times, serif;
   width: 90%;
   max-width: 1300px;
   margin-left: auto;
@@ -215,8 +246,12 @@ footer .container {
 }
 
 li {
-  color: violet;
+  /*color: violet;  WHAT THE ACTUAL FUCK? */
   text-decoration: none;
+}
+
+footer {
+  margin-top: 130px;
 }
 
 li::-moz-selection {
@@ -236,7 +271,7 @@ ul {
 }
 
 .eveniment {
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 /*# sourceMappingURL=App.css.map */

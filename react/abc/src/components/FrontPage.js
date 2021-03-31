@@ -1,9 +1,12 @@
-import React from "react";
+import React from 'react';
 
 export default function FrontPage() {
   return (
     <>
-      <img src="./img/background.jpg" style={{width:"100vw",}} />
+      <img
+        src="https://abc.osut.ro/img/bg/bg_0.jpg"
+        style={{ width: '100vw', display: 'block', marginBottom: 70 }}
+      />
     </>
   );
 }
