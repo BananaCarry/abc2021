@@ -12,6 +12,7 @@ export default function Slider() {
             href="https://youtu.be/wKRL7vkWMoc"
             role="button"
             target="_blank"
+            rel="noreferrer"
           >
             Înscrie-te!
           </a>

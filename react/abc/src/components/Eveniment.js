@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Eveniment({ title, om, data, poza, descriere }) {
+export default function Eveniment(props) {
   return (
     <>
       <div class="col-lg-12">
@@ -18,17 +18,18 @@ export default function Eveniment({ title, om, data, poza, descriere }) {
               width: "20%",
             }}
           >
-            <img src={poza} style={{ width: "100%" }} />
+            <img src={props.poza} style={{ width: "100%", borderRadius:"10%"}} />
           </div>
           <div style={{ float: "right", width: "74%" }}>
-            <h3 style={{ fontWeight: "900" }}>{title}</h3>
-            <h6 style={{ opacity: 0.7 }}>{om}</h6>
+            <h3 style={{ fontWeight: "900" }}>{props.title}</h3>
+            <h6 style={{ opacity: 0.7 }}>{props.om}</h6>
 
             <div class="text-bold" style={{ marginBottom: 10 }}>
-              🗓 {data}
+              🗓 {props.data}
             </div>
 
-            <p style={{ fontSize: ".9rem" }}>{descriere}</p>
+            <p style={{ fontSize: ".9rem" }}>{props.descriere}</p>
+            <a href={props.link} class="btn btn-primary btn-lg" role="button" aria-disabled="true" target="_blank">Înscrie-te!</a>
           </div>
         </div>
       </div>

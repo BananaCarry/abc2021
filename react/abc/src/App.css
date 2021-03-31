@@ -234,4 +234,9 @@ ul {
 #email-proiect {
   margin-top: 20px;
 }
+
+.eveniment {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
 /*# sourceMappingURL=App.css.map */

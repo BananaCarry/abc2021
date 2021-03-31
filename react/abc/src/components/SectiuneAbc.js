@@ -5,7 +5,7 @@ export default function SectiuneAbc(props) {
     <>
       <div class="col-md-12">
         <h4 class="subtitle">{props.title}</h4>
-        <p>{props.content}</p>
+        <p>{props.content}</p> <br />
       </div>
     </>
   );
